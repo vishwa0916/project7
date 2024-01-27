@@ -229,7 +229,7 @@ function HomePage(props) {
 
 
         <div>
-            <h1 className='mt-3 welcometxt'>Welcome Arunkumar</h1>
+            <h1 className='mt-3 welcometxt'>Welcome Vishwa</h1>
             <div className='display-container mt-5'>
                 <h1 className='mynotes'> <FontAwesomeIcon icon={faNoteSticky} /> My Notes</h1>
 
