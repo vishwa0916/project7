@@ -1,0 +1,279 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainbox {
+    height: 1100px;
+    background: var(--Primary, #E3E8F8);
+}
+
+.sidebarm {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 177vh;
+
+}
+
+.display-container {
+    overflow-x: auto;
+}
+
+
+.horizontal-card-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.addnotetxtbox,
+.addnotetxtbox2 {
+    border-width: 0px;
+    background: var(--Secondary, #F5F5F5);
+}
+
+.horizontal-card-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.card {
+    flex: 0 0 auto;
+    min-width: 250px;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    scrollbar-width: thin;
+    scrollbar-color: red;
+}
+
+.btnicons {
+    display: flex;
+    width: 40%;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card-content {
+    padding: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.no-notes-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
+.addnotebox {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--accent, #203562);
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44.8px;
+
+
+
+    border-radius: 16px;
+    opacity: 0.8;
+    background: var(--Secondary, #F5F5F5);
+    box-shadow: 2px 4px 16px 0px rgba(32, 53, 98, 0.47);
+
+    position: relative;
+    top: 3%;
+}
+
+.timeclickbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.remtime {
+    border-width: 0px;
+    border-radius: 24px;
+    background: var(--Primary, #E3E8F8);
+    width: fit-content;
+}
+
+.addclick {
+    border-width: 0px;
+    border-radius: 24px;
+    background: var(--Primary, #E3E8F8);
+    width: fit-content;
+    padding: 0px 15px;
+}
+
+.addnotetxt {
+    margin-left: 5%;
+    max-width: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    text-overflow: ellipsis;
+
+    display: flex;
+}
+
+
+.deletebtn {
+
+    border-width: 0px;
+    border-radius: 20px;
+    padding: 0px 15px;
+    background: var(--Primary, #E3E8F8);
+    width: fit-content;
+
+}
+
+.horizontal-card-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 10px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f4f4f4;
+}
+
+.card {
+    min-width: 200px;
+    max-width: 300px;
+    max-height: 500px;
+
+    text-overflow: ellipsis;
+    display: flex;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+    border-radius: 10%;
+
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.mynotes {
+
+    color: #203562;
+}
+
+
+
+
+
+.sidebox {
+    scrollbar-width: thin;
+    scrollbar-color: #0B63F8 transparent;
+    height: 890px;
+}
+.welcometxt{
+    color:#203562;
+    font-size: 3em;
+}
+
+
+
+
+@media (min-width: 350px) and (max-width: 1070px) {
+
+    .sidebox {
+        top: 0%;
+
+    }
+}
+
+.list1 a {
+    display: block;
+}
+
+@media (max-width: 1070px) {
+    .list1 a {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebox {
+        position: fixed;
+        width: min-content;
+        top: 0%;
+
+        overflow-y: auto;
+        max-height: 100vh;
+    }
+
+    .sidebox::-webkit-scrollbar-thumb {
+
+        border-radius: 2px;
+        background-color: #0B63F8;
+    }
+
+    .sidebox {
+        scrollbar-width: thin;
+        height: 960px;
+    }
+
+    .notesmainbox {
+
+        margin-left: 25.5%;
+
+    }
+
+
+}
+
+
+
+
+a:hover{
+color:#F5F5F5;
+    background-color:#203562;
+    border-radius: 10px;
+}
+
+
+
+
+input{
+
+outline:none;
+}
+
+.btnicons{
+    cursor: pointer;
+}

@@ -1,0 +1,100 @@
+
+.TasksPage {
+    background: var(--Primary, #E3E8F8);
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.task-item {
+    background-color: whitesmoke;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.task-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 2px solid var(--accent, #203562);
+    border-radius: 4px;
+    background-color: white;
+}
+
+.task-content {
+    flex-grow: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 18px;
+    color: #203562;
+}
+
+.task-item:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
+.no-tasks-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.task-checkbox.checked {
+    background-color: var(--accent, #203562);
+    border-color: var(--accent, #203562);
+}
+
+.task-checkbox.checked::before {
+    font-size: 16px;
+    color: white;
+    display: block;
+    text-align: center;
+    line-height: 18px;
+}
+
+
+.TasksList {
+    height: 400px;
+
+    width: 100%;
+    background-color: white;
+
+    overflow-y: scroll;
+    margin-bottom: 20px;
+    border-radius: 30px;
+
+}
+
+.taskbtn {
+
+    border-width: 0px;
+    border-radius: 20px;
+    padding: 0px 15px;
+    background: var(--Primary, #E3E8F8);
+    width: fit-content;
+
+}
+
+.taskinp {
+
+    background: var(--Secondary, #F5F5F5);
+    border-width: 0px
+}
