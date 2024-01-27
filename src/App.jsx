@@ -26,7 +26,7 @@ function App(props) {
 
                                 <FontAwesomeIcon icon={faUserLarge} className='mx-3'/>
         
-                                Arunkumar</h3>
+                                Vishwa</h3>
 
 
                         </div>
